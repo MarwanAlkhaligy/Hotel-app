@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="Receptionist_GUI" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.ReceptionistController">
+   <children>
+      <Label layoutX="110.0" layoutY="35.0" prefHeight="30.0" prefWidth="70.0" text="Name :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Employee_Name" layoutX="180.0" layoutY="35.0" prefHeight="30.0" prefWidth="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="35.0" prefHeight="30.0" prefWidth="70.0" text="Email :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Employee_Email" layoutX="580.0" layoutY="35.0" prefHeight="30.0" prefWidth="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="910.0" layoutY="35.0" prefHeight="30.0" prefWidth="70.0" text="Gender :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Employee_Gender" layoutX="980.0" layoutY="35.0" prefHeight="30.0" prefWidth="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="85.0" prefHeight="30.0" prefWidth="70.0" text="S/N :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Employee_SN" layoutX="190.0" layoutY="85.0" prefHeight="30.0" prefWidth="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="85.0" prefHeight="30.0" prefWidth="70.0" text="ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Employee_ID" layoutX="580.0" layoutY="85.0" prefHeight="30.0" prefWidth="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="910.0" layoutY="85.0" prefHeight="30.0" prefWidth="90.0" text="BirthDate :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Employee_BirthDate" layoutX="1000.0" layoutY="85.0" prefHeight="30.0" prefWidth="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="135.0" prefHeight="30.0" prefWidth="70.0" text="Salary :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Employee_Salary" layoutX="180.0" layoutY="135.0" prefHeight="30.0" prefWidth="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="135.0" prefHeight="30.0" prefWidth="90.0" text="Shift Time :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Employee_ShiftTime" layoutX="600.0" layoutY="135.0" prefHeight="30.0" prefWidth="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="Guest_Table" layoutX="110.0" layoutY="200.0" prefHeight="260.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="Guest_Name_Table" prefWidth="100.0" text="Guest Name" />
+          <TableColumn fx:id="Guest_Pass_Table" prefWidth="100.0" text="Guest Password" />
+            <TableColumn fx:id="Guest_SN_Table" prefWidth="100.0" text="Guest SN" />
+            <TableColumn fx:id="Guest_Gender_Table" prefWidth="100.0" text="Guest Gender" />
+            <TableColumn fx:id="Guest_Email_Table" prefWidth="100.0" text="Guest Email" />
+            <TableColumn fx:id="Guest_BirthDate" prefWidth="100.0" text="Guest BirthDate" />
+        </columns>
+      </TableView>
+      <Label layoutX="920.0" layoutY="200.0" prefHeight="30.0" prefWidth="110.0" text="Guest Name :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Guest_Book_Name" layoutX="1030.0" layoutY="200.0" prefHeight="30.0" prefWidth="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="920.0" layoutY="240.0" prefHeight="30.0" prefWidth="110.0" text="Guest S/N :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Guest_Book_SN" layoutX="1030.0" layoutY="240.0" prefHeight="30.0" prefWidth="230.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="Room_Book_Table" layoutX="920.0" layoutY="280.0" prefHeight="160.0" prefWidth="310.0">
+         <columns>
+            <TableColumn fx:id="Room_ID_Book_Table" prefWidth="70.0" text="Room ID" />
+            <TableColumn fx:id="Room_Number_of_Bed_Book_Table" prefWidth="90.0" text="Num Of Beds" />
+            <TableColumn fx:id="Room_Description_Book_Table" prefWidth="148.0" text="Room Description" />
+         </columns>
+      </TableView>
+      <Button layoutX="920.0" layoutY="460.0" mnemonicParsing="false" onAction="#SelectGuestButtonAction" prefHeight="30.0" prefWidth="100.0" text="Select Guest" />
+      <Button layoutX="1025.0" layoutY="460.0" mnemonicParsing="false" onAction="#AddRoomButtonAction" prefHeight="30.0" prefWidth="100.0" text="Add Room" />
+      <Button layoutX="1130.0" layoutY="460.0" mnemonicParsing="false" onAction="#RemoveRoomButtonAction" prefHeight="30.0" prefWidth="100.0" text="Remove Room" />
+      <Button layoutX="920.0" layoutY="500.0" mnemonicParsing="false" onAction="#BookRoomButtonAction" prefHeight="30.0" prefWidth="310.0" text="BOOK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="Selection_Status" alignment="CENTER" contentDisplay="CENTER" layoutX="945.0" layoutY="540.0" prefHeight="30.0" prefWidth="260.0" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="Room_Table" layoutX="110.0" layoutY="490.0" prefHeight="200.0" prefWidth="260.0">
+        <columns>
+          <TableColumn fx:id="Room_ID_Table" prefWidth="60.0" text="Room ID" />
+          <TableColumn fx:id="Room_Number_of_Bed_Table" prefWidth="85.0" text="Num Of Beds" />
+            <TableColumn fx:id="Room_Description_Table" prefWidth="110.0" text="Room Description" />
+        </columns>
+      </TableView>
+      <TableView fx:id="Room_Reserved_Table" layoutX="420.0" layoutY="490.0" prefHeight="200.0" prefWidth="465.0">
+         <columns>
+            <TableColumn fx:id="Room_Guest_SN_Reserved_Table" prefWidth="70.0" text="Guest SN" />
+            <TableColumn fx:id="Room_ID_Reserved_Table" prefWidth="60.0" text="Room ID" />
+            <TableColumn fx:id="Room_Number_of_Bed_Reserved_Table" prefWidth="85.0" text="Num Of Beds" />
+            <TableColumn fx:id="Room_Description_Reserved_Table" prefWidth="110.0" text="Room Description" />
+            <TableColumn fx:id="Room_Reservation_Time_Reserved_Table" prefWidth="120.0" text="Room Start Time" />
+         </columns>
+      </TableView>
+      <Button layoutX="920.0" layoutY="660.0" mnemonicParsing="false" onAction="#RefreshButtonAction" prefHeight="30.0" prefWidth="310.0" text="REFRESH">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

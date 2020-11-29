@@ -1,0 +1,107 @@
+create table manager(
+name varchar2(10),
+password varchar2(10),
+work_id number(10),
+ssn number(10),
+birthDate varchar2(20),
+gender varchar2(6),
+email varchar2(20),
+salary number(7,2),
+mgr_start_Date varchar2(20),
+constraint pk_manger primary key (work_id)
+);
+
+create table security_persons(
+name varchar2(10),
+password varchar2(10),
+work_id number(10),
+ssn number(10),
+Age number(2),
+gender varchar2(6),
+email varchar2(20),
+salary number(7,2),
+mgr_id number(10),
+leader_id number(10),
+constraint pk_security primary key (work_id),
+constraint fk_mgr_sper foreign key (mgr_id) references  manager (work_id),
+constraint fk_smanges foreign key (leader_id) references security_persons (work_id)
+);
+
+create table cleaning_persons(
+name varchar2(10),
+password varchar2(10),
+work_id number(10),
+ssn number(10),
+Age number(2),
+gender varchar2(6),
+email varchar2(20),
+salary number(7,2),
+mgr_id number(10),
+leader_id number(10),
+constraint pk_cleaning primary key (work_id),
+constraint fk_mgr_cper foreign key (mgr_id) references  manager (work_id),
+constraint fk_cmanages foreign key (leader_id) references cleaning_persons (work_id)
+);
+
+create table chiefing_persons(
+name varchar2(10),
+password varchar2(10),
+work_id number(10),
+ssn number(10),
+Age number(2),
+gender varchar2(6),
+email varchar2(20),
+salary number(7,2),
+mgr_id number(10),
+leader_id number(10),
+constraint pk_chiefing primary key (work_id),
+constraint fk_mgr_chief foreign key (mgr_id) references  manager (work_id),
+constraint fk_fmanages foreign key (leader_id) references chiefing_persons (work_id)
+);
+
+create table receptionist_person(
+name varchar2(10),
+password varchar2(10),
+work_id number(10),
+ssn number(10),
+Age number(2),
+gender varchar2(6),
+email varchar2(20),
+salary number(7,2),
+mgr_id number(10),
+leader_id number(10),
+constraint pk_receptionist primary key (work_id),
+constraint fk_mgr_receptionist foreign key (mgr_id) references  manager (work_id),
+constraint fk_rmanages foreign key (leader_id) references receptionist_person (work_id)
+);
+
+create table Guest(
+name varchar2(20),
+ssn number(20),
+birthDate varchar2(20),
+gender varchar2(20),
+email varchar2(20),
+VisaCardNumber number(20),
+password varchar2(20),
+phone_number number(20),
+constraint pk_Guest primary key(ssn)
+);
+
+create table Room(
+Room_Id number(5),
+Number_of_Bed number(1),
+Room_Description varchar2(30),
+recep_id number(10),
+constraint pk_room primary key (Room_Id),
+constraint fk_recep_room foreign key (recep_id) references receptionist_person (work_id)
+);
+
+create table reserved_rooms(
+guest_ssn number(20),
+Room_Id number(5),
+Number_of_Bed number(1),
+Room_Description varchar2(30),
+reservation_Time varchar2(20),
+constraint pk_Reserved_rooms primary key(guest_ssn,Room_Id),
+constraint fk_res_guest foreign key (guest_ssn) references Guest (ssn)
+);

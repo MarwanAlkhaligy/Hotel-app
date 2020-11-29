@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.LoginController">
+   <children>
+      <TabPane layoutX="200.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="USER">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="200.0" layoutY="68.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="SIGN IN">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="User_SignIn_Name" layoutX="100.0" layoutY="25.0" prefHeight="30.0" prefWidth="300.0" promptText="NAME" />
+                                          <PasswordField fx:id="User_SignIn_Pass" layoutX="500.0" layoutY="25.0" prefHeight="30.0" prefWidth="300.0" promptText="PASSWORD" />
+                                          <Button fx:id="User_SignIn_Button" layoutX="421.0" layoutY="95.0" onAction="#User_SignInButtonAction" text="SIGN IN" />
+                                          <Label fx:id="User_SignIn_Status" alignment="CENTER" layoutX="301.0" layoutY="140.0" prefHeight="30.0" prefWidth="300.0" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font></Label>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="SIGN UP">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="User_SignUp_Name" layoutX="100.0" layoutY="25.0" prefHeight="30.0" prefWidth="300.0" promptText="NAME" />
+                                          <TextField fx:id="User_SignUp_Pass" layoutX="500.0" layoutY="25.0" prefHeight="30.0" prefWidth="300.0" promptText="PASSWORD" />
+                                          <TextField fx:id="User_Email" layoutX="900.0" layoutY="25.0" prefHeight="30.0" prefWidth="300.0" promptText="EMAIL" />
+                                          <TextField fx:id="User_PhoneNum" layoutX="100.0" layoutY="75.0" prefHeight="30.0" prefWidth="300.0" promptText="PHONE NUMBER" />
+                                          <TextField fx:id="User_Gender" layoutX="500.0" layoutY="75.0" prefHeight="30.0" prefWidth="300.0" promptText="GENDER" />
+                                          <DatePicker fx:id="User_BirthDate" layoutX="900.0" layoutY="75.0" prefHeight="30.0" prefWidth="300.0" promptText="Date Of Birth" />
+                                          <TextField fx:id="User_SN" layoutX="100.0" layoutY="125.0" prefHeight="30.0" prefWidth="300.0" promptText="S/N" />
+                                          <TextField fx:id="User_VisaCard" layoutX="500.0" layoutY="125.0" prefHeight="30.0" prefWidth="300.0" promptText="VISA CARD" />
+                                          <Button fx:id="User_SignUp_Button" layoutX="400.0" layoutY="175.0" mnemonicParsing="false" onAction="#User_SignUpButtonAction" prefHeight="30.0" prefWidth="500.0" text="SIGN UP" />
+                                          <Label fx:id="User_SignUp_Status" alignment="CENTER" layoutX="500.0" layoutY="230.0" prefHeight="30.0" prefWidth="300.0" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="EMPLOYEE">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="200.0" layoutY="68.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <tabs>
+                              <Tab text="SIGN IN">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="Employee_Name" layoutX="100.0" layoutY="25.0" prefHeight="30.0" prefWidth="300.0" promptText="NAME" />
+                                          <PasswordField fx:id="Employee_Pass" layoutX="500.0" layoutY="25.0" prefHeight="30.0" prefWidth="300.0" promptText="PASSWORD" />
+                                          <Button layoutX="250.0" layoutY="75.0" mnemonicParsing="false" onAction="#Employee_SignInButtonAction" prefHeight="30.0" prefWidth="400.0" text="SIGN IN" />
+                                          <Label fx:id="Employee_SignIn_Status" alignment="CENTER" layoutX="300.0" layoutY="140.0" prefHeight="30.0" prefWidth="300.0" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

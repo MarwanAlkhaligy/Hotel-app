@@ -1,0 +1,48 @@
+insert into Room (Room_Id , Room_Description, Number_of_Bed) values (1020,'ssssssEEDDdjshfjk',2);
+insert into Room (Room_Id ,  Room_Description,Number_of_Bed) values (1021,'QQQEEDDdjshfjk',3);
+insert into Room (Room_Id , Room_Description , Number_of_Bed) values (1022,'QQQEEDDdjshfjk',4);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1023,'WWWWWEEDDdjshfjk',5);
+insert into Room (Room_Id ,  Room_Description , Number_of_Bed) values (1024,'RRRRRREEDDdjshfjk',6);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1025,'TTTTTTTEEDDdjshfjk',7);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1026,'YYYYYYEEDDdjshfjk',2);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1027,'UUUUUuEEDDdjshfjk',2);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1028,'iiiiiiEEDDdjshfjk',3);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1029,'oOOOOOEEDDdjshfjk',3);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1030,'TTTTTTTEEDDdjshfjk',4);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1031,'YYYYYYEEDDdjshfjk',4);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1032,'UUUUUuEEDDdjshfjk',5);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1033,'iiiiiiEEDDdjshfjk',5);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1034,'oOOOOOEEDDdjshfjk',6);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1035,'TTTTTTTEEDDdjshfjk',6);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1036,'YYYYYYEEDDdjshfjk',7);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1037,'UUUUUuEEDDdjshfjk',7);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1038,'iiiiiiEEDDdjshfjk',8);
+insert into Room (Room_Id ,  Room_Description ,Number_of_Bed) values (1039,'oOOOOOEEDDdjshfjk',8);
+
+
+
+insert into Guest (name,ssn ,gender ,email,VisaCardNumber ,password ,phone_number) values ('Islam Ahmed',2160234313434,'male','islam@yahoo.com',11335556680,'fdsfo57864',11113243243444);
+insert into Guest (name,ssn ,gender ,email,VisaCardNumber ,password ,phone_number) values ('Ashraf Ahmed',216123422345,'male','ashraf@yahoo.com',12335556681,'wdfsfhio57865',2222324324394);
+insert into Guest (name,ssn ,gender ,email,VisaCardNumber ,password ,phone_number) values ('Amgad Ahmed',2162234333436,'male','imgad@yahoo.com',13335556682,'ytuioo57866',3333324324340);
+insert into Guest (name,ssn ,gender ,email,VisaCardNumber ,password ,phone_number) values ('Akram Ahmed',2163234343437,'male','ikram@yahoo.com',14335556683,'mnjkj57867',4444324324314);
+insert into Guest (name,ssn ,gender ,email,VisaCardNumber ,password ,phone_number) values ('Anwar Ahmed',2164234353438,'male','inwar@yahoo.com',15335556684,'asdsx57868',5555324324324);
+insert into Guest (name,ssn ,gender ,email,VisaCardNumber ,password ,phone_number) values ('3anter Ahmed',216523462339,'male','antar@yahoo.com',16335556685,'wxce57869',6666324324334);
+insert into Guest (name,ssn ,gender ,email,VisaCardNumber ,password ,phone_number) values ('Ayman Ahmed',2166234373440,'male','ayman@yahoo.com',17335556686,'wqezdx5786123',7777324324344);
+
+
+
+insert into reserved_rooms (guest_ssn , Room_Id ,Number_of_Bed ) values (216123422345,1020,2);
+insert into reserved_rooms (guest_ssn , Room_Id ,Number_of_Bed ) values (2162234333436,1021,2);
+insert into reserved_rooms (guest_ssn , Room_Id ,Number_of_Bed ) values (2163234343437,1022,2);
+insert into reserved_rooms (guest_ssn , Room_Id ,Number_of_Bed ) values (2164234353438,1023,2);
+insert into reserved_rooms (guest_ssn , Room_Id ,Number_of_Bed ) values (216123422345,1024,2);
+insert into reserved_rooms (guest_ssn , Room_Id ,Number_of_Bed ) values (216523462339,1025,2);
+insert into reserved_rooms (guest_ssn , Room_Id ,Number_of_Bed ) values (2166234373440,1026,2);
+
+insert into manager (name ,password ,work_id ,ssn ,gender, email,salary) values ('A7med','45tr989',10001,34434234,'male','dfdfd@yahoo.com',5000);
+insert into manager (name ,password ,work_id ,ssn ,gender, email,salary) values ('A7med','45tr989',10002,34434234,'male','dfdfd@yahoo.com',5000);
+insert into manager (name ,password ,work_id ,ssn ,gender, email,salary) values ('A7med','45tr989',10003,34434234,'male','dfdfd@yahoo.com',5000);
+insert into manager (name ,password ,work_id ,ssn ,gender, email,salary) values ('A7med','45tr989',10004,34434234,'male','dfdfd@yahoo.com',5000);
+insert into manager (name ,password ,work_id ,ssn ,gender, email,salary) values ('A7med','45tr989',10005,34434234,'male','dfdfd@yahoo.com',5000);
+insert into manager (name ,password ,work_id ,ssn ,gender, email,salary) values ('A7med','45tr989',10006,34434234,'male','dfdfd@yahoo.com',5000);
+

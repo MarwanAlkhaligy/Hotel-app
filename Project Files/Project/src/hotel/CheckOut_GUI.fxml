@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.CheckOutController">
+   <children>
+        <TableView fx:id="Room_CheckOut_Table" layoutX="60.0" layoutY="50.0" prefHeight="200.0" prefWidth="500.0">
+         <columns>
+            <TableColumn fx:id="Room_ID_CheckOut_Table" prefWidth="60.0" text="Room ID" />
+            <TableColumn fx:id="Room_Number_of_Bed_CheckOut_Table" prefWidth="85.0" text="Num Of Beds" />
+            <TableColumn fx:id="Room_Description_CheckOut_Table" prefWidth="110.0" text="Room Description" />
+            <TableColumn fx:id="Room_Reservation_Time_CheckOut_Table" prefWidth="120.0" text="Room Start Time" />
+            <TableColumn fx:id="Room_End_Time_CheckOut_Table1" prefWidth="120.0" text="Room End Time" />
+         </columns>
+      </TableView>
+      <Label layoutX="60.0" layoutY="270.0" prefHeight="30.0" prefWidth="100.0" text="Total Cost :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="CheckOutCost" layoutX="160.0" layoutY="270.0" prefHeight="30.0" prefWidth="70.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="270.0" prefHeight="30.0" prefWidth="30.0" text="LE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="160.0" layoutY="345.0" mnemonicParsing="false" onAction="#CheckOutButtonAction" prefHeight="30.0" prefWidth="300.0" text="Check Out Now" />
+   </children>
+</AnchorPane>
