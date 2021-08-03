@@ -5,10 +5,10 @@ to manage hotel bookings. It stores rates and inventory of hotel rooms as well a
 information of clients.
 
 # Modules
-. Login
-. Room booking
-. Cancel booking
-. Search available rooms
-. Check-in
-. Check-out
-. Customer room fees
+* Login
+* Room booking
+* Cancel booking
+* Search available rooms
+* Check-in
+* Check-out
+* Customer room fees
